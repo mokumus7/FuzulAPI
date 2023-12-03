@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 3, 2023 05:32:17 pm</span></a>
+<a href="#"><span class="badge badge-primary">Dec 3, 2023 07:56:42 pm</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 3, 2023 05:32:17 pm</h3>
+<h3>Dec 3, 2023 07:56:42 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 3, 2023 05:32:20 pm</h3>
+<h3>Dec 3, 2023 07:56:45 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Fuzul API":2.664
+"Fuzul API":2.617
 };
 </script>
 <div class="row">
@@ -185,12 +185,20 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>@smoke</td>
+<td>@fuzulAPI</td>
 <td>4</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
 <td>80%</td>
+</tr>
+<tr>
+<td>@tc04</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@regression</td>
@@ -201,15 +209,7 @@ var timeline = {
 <td>80%</td>
 </tr>
 <tr>
-<td>@tc03</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@tc04</td>
+<td>@tc01</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -225,7 +225,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@fuzulAPI</td>
+<td>@smoke</td>
 <td>4</td>
 <td>1</td>
 <td>0</td>
@@ -233,7 +233,7 @@ var timeline = {
 <td>80%</td>
 </tr>
 <tr>
-<td>@tc01</td>
+<td>@tc03</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -299,7 +299,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tc05</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@tc03</a><a class="dropdown-item" href="#">@tc04</a><a class="dropdown-item" href="#">@tc02</a><a class="dropdown-item" href="#">@fuzulAPI</a><a class="dropdown-item" href="#">@tc01</a>
+<a class="dropdown-item" href="#">@tc05</a><a class="dropdown-item" href="#">@fuzulAPI</a><a class="dropdown-item" href="#">@tc04</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@tc01</a><a class="dropdown-item" href="#">@tc02</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@tc03</a>
 </ul>
 </li>
 </ul>
@@ -312,7 +312,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Fuzul API</p>
             <p class="text-sm">
-              <span>17:32:17</span> / <span>00:00:02:664</span>
+              <span>19:56:42</span> / <span>00:00:02:617</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -321,9 +321,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Fuzul API</h5>
-<span class='badge badge-success'>12.03.2023 17:32:17</span>
-<span class='badge badge-danger'>12.03.2023 17:32:20</span>
-<span class='badge badge-default'>00:00:02:664</span>
+<span class='badge badge-success'>12.03.2023 19:56:42</span>
+<span class='badge badge-danger'>12.03.2023 19:56:45</span>
+<span class='badge badge-default'>00:00:02:617</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -561,7 +561,7 @@ Expected status code <200> but was <500>.
 	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
 	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
 	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
-	at stepdefinitions.FuzulApiStepdefinition.userVerifiesThatStatusCodeIsEqualTo(FuzulApiStepdefinition.java:39)
+	at stepdefinitions.FuzulApiStepdefinition.userVerifiesThatStatusCodeIsEqualTo(FuzulApiStepdefinition.java:40)
 	at ✽.User verifies that status code is equal to 200(file:///C:/Users/mokum/IdeaProjects/FuzulAPI/./src/test/resources/features/fuzul.feature:48)
 </textarea>
       
@@ -614,275 +614,11 @@ Expected status code <200> but was <500>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:32:20 pm</td>
+<td>19:56:45 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='38'>TC05_WeatherForecast_Testing</a>
 <div class="">
 <span class="badge badge-default">Fuzul API.TC05_WeatherForecast_Testing</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@smoke</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:17 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_Entity_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC01_Entity_Testing</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>TC02_EntityGroup_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC02_EntityGroup_Testing</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='21'>TC03_Product_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC03_Product_Testing</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='32'>TC04_Product/id_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC04_Product/id_Testing</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:32:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='38'>TC05_WeatherForecast_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC05_WeatherForecast_Testing</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@regression</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@regression</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:17 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_Entity_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC01_Entity_Testing</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>TC02_EntityGroup_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC02_EntityGroup_Testing</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='21'>TC03_Product_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC03_Product_Testing</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='32'>TC04_Product/id_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC04_Product/id_Testing</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>17:32:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='38'>TC05_WeatherForecast_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC05_WeatherForecast_Testing</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tc03</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tc03</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='21'>TC03_Product_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC03_Product_Testing</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tc04</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tc04</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:20 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='32'>TC04_Product/id_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC04_Product/id_Testing</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tc02</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tc02</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:19 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>TC02_EntityGroup_Testing</a>
-<div class="">
-<span class="badge badge-default">Fuzul API.TC02_EntityGroup_Testing</span>
 </div>
 </td>
 </tr>
@@ -916,7 +652,7 @@ Expected status code <200> but was <500>.
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:17 pm</td>
+<td>19:56:42 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>TC01_Entity_Testing</a>
 <div class="">
@@ -926,7 +662,7 @@ Expected status code <200> but was <500>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:19 pm</td>
+<td>19:56:44 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='11'>TC02_EntityGroup_Testing</a>
 <div class="">
@@ -936,7 +672,7 @@ Expected status code <200> but was <500>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:19 pm</td>
+<td>19:56:44 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='21'>TC03_Product_Testing</a>
 <div class="">
@@ -946,7 +682,7 @@ Expected status code <200> but was <500>.
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:20 pm</td>
+<td>19:56:45 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='32'>TC04_Product/id_Testing</a>
 <div class="">
@@ -956,7 +692,121 @@ Expected status code <200> but was <500>.
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:32:20 pm</td>
+<td>19:56:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>TC05_WeatherForecast_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC05_WeatherForecast_Testing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tc04</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc04</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>TC04_Product/id_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC04_Product/id_Testing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01_Entity_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC01_Entity_Testing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>TC02_EntityGroup_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC02_EntityGroup_Testing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>TC03_Product_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC03_Product_Testing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>TC04_Product/id_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC04_Product/id_Testing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:56:45 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='38'>TC05_WeatherForecast_Testing</a>
 <div class="">
@@ -992,11 +842,161 @@ Expected status code <200> but was <500>.
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>17:32:17 pm</td>
+<td>19:56:42 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>TC01_Entity_Testing</a>
 <div class="">
 <span class="badge badge-default">Fuzul API.TC01_Entity_Testing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tc02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>TC02_EntityGroup_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC02_EntityGroup_Testing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01_Entity_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC01_Entity_Testing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>TC02_EntityGroup_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC02_EntityGroup_Testing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>TC03_Product_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC03_Product_Testing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>TC04_Product/id_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC04_Product/id_Testing</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:56:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>TC05_WeatherForecast_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC05_WeatherForecast_Testing</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@tc03</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@tc03</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:56:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='21'>TC03_Product_Testing</a>
+<div class="">
+<span class="badge badge-default">Fuzul API.TC03_Product_Testing</span>
 </div>
 </td>
 </tr>
@@ -1044,7 +1044,7 @@ Expected status code <200> but was <500>.
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>17:32:20 pm</td>
+<td>19:56:45 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='41'>Then User verifies that status code is equal to 200</a>
 <div class="">

@@ -15,18 +15,10 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedScenarios.txt"
         },
         monochrome = true,
-        features = "./src/test/resources/features",
-        glue = {"stepdefinitions","hooks"},
-        tags = "@smoke",
+        features = "@target/failedScenarios.txt",
+        glue = {"stepdefinitions", "hooks"},
         dryRun = false
-
 )
-public class Runner {
-
-
-
-
-
-
+public class FailedRunner {
 
 }
